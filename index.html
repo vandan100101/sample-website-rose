@@ -1,92 +1,80 @@
-Skip to content
-You said:
-create me a portfolio website make it reposive and interactive combination of white and apple greem color and make it modern design only html and js
-ChatGPT said:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --green: #8DB600;
+      --white: #ffffff;
+    }
 
-Answer in chat instead
-Here's your modern, responsive, and interactive portfolio website using only HTML and JavaScript. The color scheme is a clean combination of white and apple green. Let me know if you'd like to add anima
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
+    body {
+      background-color: var(--white);
+      color: #333;
+      line-height: 1.6;
+    }
 
+    header {
+      background-color: var(--green);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
+    nav a {
+      color: var(--white);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-No file chosenNo file chosen
-ChatGPT can make mistakes. Check important info.
+    nav a:hover {
+      text-decoration: underline;
+    }
 
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-Portfolio-website
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
+    section {
+      margin-bottom: 4rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: var(--green);
+      color: var(--white);
+      border-radius: 10px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
       background-color: #f1f1f1;
       font-size: 0.9rem;
     }
@@ -160,5 +148,3 @@ Portfolio-website
   </script>
 </body>
 </html>
-
-ChatGPT is still generating a response...
