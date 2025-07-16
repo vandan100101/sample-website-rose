@@ -1,0 +1,164 @@
+Skip to content
+You said:
+create me a portfolio website make it reposive and interactive combination of white and apple greem color and make it modern design only html and js
+ChatGPT said:
+
+Answer in chat instead
+Here's your modern, responsive, and interactive portfolio website using only HTML and JavaScript. The color scheme is a clean combination of white and apple green. Let me know if you'd like to add anima
+
+
+
+
+No file chosenNo file chosen
+ChatGPT can make mistakes. Check important info.
+
+
+Portfolio-website
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+      background-color: #f1f1f1;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm a passionate developer skilled in building responsive and interactive websites. I enjoy solving problems and creating visually appealing digital experiences.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects" id="project-list">
+        <!-- Projects will be added by JS -->
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: yourname@example.com</p>
+      <p>LinkedIn: linkedin.com/in/yourprofile</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+  <script>
+    const projects = [
+      {
+        title: "Project One",
+        description: "A modern web app built with HTML, CSS, and JavaScript."
+      },
+      {
+        title: "Project Two",
+        description: "Interactive dashboard with live data visualizations."
+      },
+      {
+        title: "Project Three",
+        description: "Responsive portfolio site with smooth animations."
+      }
+    ];
+
+    const projectList = document.getElementById('project-list');
+
+    projects.forEach(project => {
+      const div = document.createElement('div');
+      div.className = 'project';
+      div.innerHTML = `<h3>${project.title}</h3><p>${project.description}</p>`;
+      projectList.appendChild(div);
+    });
+  </script>
+</body>
+</html>
+
+ChatGPT is still generating a response...
